@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">나의 점수</string>
+
+    <!-- select page text -->
+    <string name="choseOneText">하나를 선택해주세요</string>
+    <string name="giveScoreText">상벌점 주기</string>
+    <string name="printText">프린트</string>
+
+    <!--상벌점 페이지-->
+    <string name="inputInfoText">상, 벌점을 받을 학생의\n정보를 입력해주세요</string>
+    <string name="studentNameText">학생 이름</string>
+    <string name="reasonText">상, 벌점의 사유</string>
+    <string name="giverNameText">상, 벌점 부여자 이름</string>
+    <string name="scoreText">상, 벌점 점수</string>
+    <string name="gradeText">학년</string>
+    <string name="classNumberText">반</string>
+    <string name="checkText">확인</string>
+    <!--학년 드랍다운 텍스트-->
+    <string-array name="grade">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <!--반 드랍다운 텍스트-->
+    <string-array name="classNum">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

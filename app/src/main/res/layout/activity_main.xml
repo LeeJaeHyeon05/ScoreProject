@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mainImageView"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:src="@drawable/kgs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/mainChoseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/gmarket_bold"
+        android:text="@string/choseOneText"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImageView" />
+
+
+    <ImageButton
+        android:id="@+id/giveScoreButton"
+        android:layout_width="170dp"
+        android:layout_height="220dp"
+        android:background="@color/gray_btn"
+        android:scaleType="fitStart"
+        android:src="@drawable/gb_icon"
+        app:layout_constraintEnd_toStartOf="@+id/printButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainChoseText"
+        app:layout_constraintTop_toTopOf="@+id/printButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/giveScoreText"
+        android:fontFamily="@font/gmarket_med"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/giveScoreButton"
+        app:layout_constraintBottom_toBottomOf="@+id/giveScoreButton"
+        app:layout_constraintEnd_toEndOf="@+id/giveScoreButton"
+        />
+
+    <ImageButton
+        android:id="@+id/printButton"
+        android:layout_width="170dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/gray_btn"
+        android:scaleType="fitStart"
+        android:src="@drawable/printer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/giveScoreButton"
+        app:layout_constraintTop_toBottomOf="@id/mainChoseText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/printText"
+        android:fontFamily="@font/gmarket_med"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/printButton"
+        app:layout_constraintBottom_toBottomOf="@+id/printButton"
+        app:layout_constraintEnd_toEndOf="@+id/printButton"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
