@@ -46,6 +46,12 @@ class ScoreActivity : AppCompatActivity() {
         val formatted = current.format(formatter)
         val docName = "doc${formatted}"
 
+        // 자료 date
+        val current2 = LocalDateTime.now()
+        val formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd:HH시mm분")
+        val formatted2 = current2.format(formatter2)
+        val dateName = formatted2
+
         checkBtn.setOnClickListener {
             val studentVal = binding.studentName.text.toString()
             val reasonVal = binding.reason.text.toString()
@@ -59,6 +65,7 @@ class ScoreActivity : AppCompatActivity() {
                 "reason" to reasonVal,
                 "giverName" to giverNameVal,
                 "score" to scoreVal,
+                "date" to dateName,
                 "grade" to gradeVal,
                 "classNum" to classVal,
             )

@@ -16,12 +16,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         movePage()
+        checkScorePage()
     }
     private fun movePage() {
         binding.giveScoreButton.setOnClickListener{
             startActivity(Intent(this, ScoreActivity::class.java))
         }
     }
+    private fun checkScorePage() {
+        binding.printButton.setOnClickListener{
+            startActivity(Intent(this, ResultActivity::class.java))
+        }
+    }
+
 
 
     //뷰바인딩

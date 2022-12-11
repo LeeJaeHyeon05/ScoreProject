@@ -4,7 +4,7 @@
     <!-- select page text -->
     <string name="choseOneText">하나를 선택해주세요</string>
     <string name="giveScoreText">상벌점 주기</string>
-    <string name="printText">프린트</string>
+    <string name="printText">상벌점 불러오기</string>
 
     <!--상벌점 페이지-->
     <string name="inputInfoText">상, 벌점을 받을 학생의\n정보를 입력해주세요</string>
@@ -15,6 +15,7 @@
     <string name="gradeText">학년</string>
     <string name="classNumberText">반</string>
     <string name="checkText">확인</string>
+    <string name="scoreListText">벌점 리스트</string>
     <!--학년 드랍다운 텍스트-->
     <string-array name="grade">
         <item>1</item>
